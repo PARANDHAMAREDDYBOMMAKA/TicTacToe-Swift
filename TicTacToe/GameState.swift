@@ -26,7 +26,7 @@ class GameState: ObservableObject {
         board[row][column].tile = turn
         
         if checkForVictory() {
-            let winner = turn == Tile.Cross ? "Crosses" : "Noughts"
+            let winner = turn == Tile.Cross ? "X" : "O"
             alertMessage = winner + " Win!"
             showAlert = true
             
